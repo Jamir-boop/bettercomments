@@ -4,8 +4,8 @@
     "description": "[[description]]",
     "group": "com.automationanywhere",
     "artifactName": "BetterComments",
-    "packageVersion": "2.11.0-20250412-010728",
-    "codeVersion": "2.11.0-20250412-010728",
+    "packageVersion": "2.11.0-20250412-012059",
+    "codeVersion": "2.11.0-20250412-012059",
     "author": "",
     "commands": [
         {
@@ -21,7 +21,6 @@
             "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.BetterCommentsCommand",
             "icon": "comment.svg",
-            "textColor": "#3b8f33",
             "returnType": "NONE",
             "returnSubtype": "UNDEFINED",
             "returnLabel": "",
