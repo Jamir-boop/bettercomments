@@ -1,0 +1,10 @@
+{
+	"label": "betterComments",
+	"description": "Comments with a code block and images.",
+	"BetterComments.label": "BetterComments",
+	"BetterComments.description": "Comments with a code block and images.",
+	"BetterComments.node_label": "Comment",
+	"BetterComments.firstString.label": "Comment title",
+	"BetterComments.codeBlockString.label": "Details",
+	"BetterComments.imageString.label": ""
+}

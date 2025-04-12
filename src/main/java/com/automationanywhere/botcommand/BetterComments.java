@@ -19,7 +19,7 @@ import static com.automationanywhere.commandsdk.model.AttributeType.*;
         return_type = DataType.NONE,
         multiple_returns = {},
         text_color = "#3b8f33",
-        documentation_url = "https://github.com/Jamir-boop/better-automationanywhere"
+        documentation_url = "https://github.com/Jamir-boop/bettercomments"
 )
 public class BetterComments {
 
