@@ -1,0 +1,11 @@
+{
+  "name": "betterComments",
+  "label": "[[label]]",
+  "description": "[[description]]",
+  "group": "com.automationanywhere",
+  "artifactName": "betterComments",
+  "packageVersion": "2.11.0-20250411-224258",
+  "codeVersion": "",
+  "author": "jamir-boop",
+  "commands": ["betterComments"]
+}

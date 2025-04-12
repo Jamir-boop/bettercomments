@@ -1,0 +1,49 @@
+{
+    "name": "betterComments",
+    "label": "[[label]]",
+    "description": "[[description]]",
+    "group": "com.automationanywhere",
+    "artifactName": "BetterComments",
+    "packageVersion": "2.11.0-20250412-010108",
+    "codeVersion": "2.11.0-20250412-010108",
+    "author": "",
+    "commands": [
+        "betterComments",
+        {
+            "name": "BetterComments",
+            "label": "[[BetterComments.label]]",
+            "description": "[[BetterComments.description]]",
+            "nodeLabel": "{{firstString}}",
+            "documentationUrl": "https://github.com/Jamir-boop/better-automationanywhere",
+            "allowedAgentTargets": [
+                "WINDOWS"
+            ],
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.BetterCommentsCommand",
+            "icon": "comment.svg",
+            "textColor": "#3b8f33",
+            "returnType": "NONE",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "",
+            "returnRequired": false,
+            "attributes": [
+                {
+                    "name": "firstString",
+                    "label": "[[BetterComments.firstString.label]]",
+                    "type": "TEXT"
+                },
+                {
+                    "name": "codeBlockString",
+                    "label": "[[BetterComments.codeBlockString.label]]",
+                    "type": "CODE"
+                },
+                {
+                    "name": "imageString",
+                    "label": "[[BetterComments.imageString.label]]",
+                    "type": "IMAGE"
+                }
+            ]
+        }
+    ]
+}
