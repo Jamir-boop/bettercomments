@@ -36,17 +36,6 @@ public class BetterComments {
             @Pkg(label = "[[BetterComments.imageString.label]]")
             String imageString
     ) {
-        // Reference inputs to ensure they're persisted when the TaskBot is saved
-        if (firstString != null) {
-            firstString.length(); // noop
-        }
-
-        if (codeBlockString != null) {
-            codeBlockString.length(); // noop
-        }
-
-        if (imageString != null) {
-            imageString.length(); // this makes sure the image is stored
-        }
+        //
     }
 }
