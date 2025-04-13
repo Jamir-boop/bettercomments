@@ -26,9 +26,9 @@
 
 ---
 
-## ⚠ Known Issue: Image Capture in Bots
+## ⚠ Known Issue: Image not showing when re-opening taskbot
 
-If you're working with bot actions that involve image capture or screen recording, make sure **"Secure Recording" is disabled** in your Control Room settings.
+Make sure **"Secure Recording" is disabled** in your Control Room settings.
 
 ![issue.png](img/issue.png)
 
