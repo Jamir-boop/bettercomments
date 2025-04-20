@@ -18,7 +18,9 @@ import static com.automationanywhere.commandsdk.model.AttributeType.*;
         icon = "comment.svg",
         return_type = DataType.NONE,
         multiple_returns = {},
-        documentation_url = "https://github.com/Jamir-boop/bettercomments"
+        documentation_url = "https://github.com/Jamir-boop/bettercomments",
+        text_color = "#3b8f33",
+        comment = true
 )
 public class BetterComments {
 
