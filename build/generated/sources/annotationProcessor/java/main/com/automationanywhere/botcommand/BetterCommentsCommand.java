@@ -2,6 +2,7 @@ package com.automationanywhere.botcommand;
 
 import com.automationanywhere.bot.service.GlobalSessionContext;
 import com.automationanywhere.botcommand.data.Value;
+import com.automationanywhere.botcommand.data.model.image.Image;
 import com.automationanywhere.botcommand.exception.BotCommandException;
 import com.automationanywhere.commandsdk.i18n.Messages;
 import com.automationanywhere.commandsdk.i18n.MessagesFactory;
@@ -49,13 +50,13 @@ public final class BetterCommentsCommand implements BotCommand {
 
     if(parameters.containsKey("imageString") && parameters.get("imageString") != null && parameters.get("imageString").get() != null) {
       convertedParameters.put("imageString", parameters.get("imageString").get());
-      if(convertedParameters.get("imageString") !=null && !(convertedParameters.get("imageString") instanceof String)) {
-        throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","imageString", "String", parameters.get("imageString").get().getClass().getSimpleName()));
+      if(convertedParameters.get("imageString") !=null && !(convertedParameters.get("imageString") instanceof Image)) {
+        throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","imageString", "Image", parameters.get("imageString").get().getClass().getSimpleName()));
       }
     }
 
     try {
-      command.action((String)convertedParameters.get("firstString"),(String)convertedParameters.get("codeBlockString"),(String)convertedParameters.get("imageString"));Optional<Value> result = Optional.empty();
+      command.action((String)convertedParameters.get("firstString"),(String)convertedParameters.get("codeBlockString"),(Image)convertedParameters.get("imageString"));Optional<Value> result = Optional.empty();
       return logger.traceExit(result);
     }
     catch (ClassCastException e) {

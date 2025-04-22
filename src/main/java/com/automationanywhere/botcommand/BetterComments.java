@@ -1,5 +1,6 @@
 package com.automationanywhere.botcommand;
 
+import com.automationanywhere.botcommand.data.model.image.Image;
 import com.automationanywhere.commandsdk.annotations.BotCommand;
 import com.automationanywhere.commandsdk.annotations.CommandPkg;
 import com.automationanywhere.commandsdk.annotations.Execute;
@@ -36,7 +37,8 @@ public class BetterComments {
 
             @Idx(index = "3", type = IMAGE)
             @Pkg(label = "[[BetterComments.imageString.label]]")
-            String imageString
+            Image imageString
+
     ) {
         //
     }

@@ -8,7 +8,6 @@
     "codeVersion": "2.11.0-20250422-145136",
     "author": "",
     "commands": [
-        "betterComments",
         {
             "name": "BetterComments",
             "label": "[[BetterComments.label]]",
