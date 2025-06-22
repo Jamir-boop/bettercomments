@@ -41,6 +41,13 @@ public final class BetterCommentsCommand implements BotCommand {
       }
     }
 
+    if(parameters.containsKey("aboutDescription") && parameters.get("aboutDescription") != null && parameters.get("aboutDescription").get() != null) {
+      convertedParameters.put("aboutDescription", parameters.get("aboutDescription").get());
+      if(convertedParameters.get("aboutDescription") !=null && !(convertedParameters.get("aboutDescription") instanceof Map)) {
+        throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","aboutDescription", "Map", parameters.get("aboutDescription").get().getClass().getSimpleName()));
+      }
+    }
+
     if(parameters.containsKey("codeBlockString") && parameters.get("codeBlockString") != null && parameters.get("codeBlockString").get() != null) {
       convertedParameters.put("codeBlockString", parameters.get("codeBlockString").get());
       if(convertedParameters.get("codeBlockString") !=null && !(convertedParameters.get("codeBlockString") instanceof String)) {
@@ -56,7 +63,7 @@ public final class BetterCommentsCommand implements BotCommand {
     }
 
     try {
-      command.action((String)convertedParameters.get("firstString"),(String)convertedParameters.get("codeBlockString"),(Image)convertedParameters.get("imageString"));Optional<Value> result = Optional.empty();
+      command.action((String)convertedParameters.get("firstString"),(Map<String, Value>)convertedParameters.get("aboutDescription"),(String)convertedParameters.get("codeBlockString"),(Image)convertedParameters.get("imageString"));Optional<Value> result = Optional.empty();
       return logger.traceExit(result);
     }
     catch (ClassCastException e) {

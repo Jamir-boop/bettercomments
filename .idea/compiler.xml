@@ -7,7 +7,7 @@
         <processorPath useClasspath="false">
           <entry name="$PROJECT_DIR$/libs/package-compileonly-sdk-1.5.0.jar" />
         </processorPath>
-        <module name="com.automationanywhere.BetterComments.main" />
+        <module name="BetterComments.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

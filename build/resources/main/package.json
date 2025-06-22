@@ -4,8 +4,8 @@
     "description": "[[description]]",
     "group": "com.automationanywhere",
     "artifactName": "BetterComments",
-    "packageVersion": "2.11.0-20250422-145136",
-    "codeVersion": "2.11.0-20250422-145136",
+    "packageVersion": "2.11.0-20250621-202002",
+    "codeVersion": "2.11.0-20250621-202002",
     "author": "",
     "commands": [
         "betterComments",
@@ -33,6 +33,11 @@
                     "name": "firstString",
                     "label": "[[BetterComments.firstString.label]]",
                     "type": "TEXT"
+                },
+                {
+                    "name": "aboutDescription",
+                    "label": "[[BetterComments.HTML.label]]",
+                    "type": "HTML"
                 },
                 {
                     "name": "codeBlockString",

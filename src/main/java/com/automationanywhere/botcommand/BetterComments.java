@@ -7,6 +7,9 @@ import com.automationanywhere.commandsdk.annotations.Execute;
 import com.automationanywhere.commandsdk.annotations.Idx;
 import com.automationanywhere.commandsdk.annotations.Pkg;
 import com.automationanywhere.commandsdk.model.DataType;
+import com.automationanywhere.botcommand.data.Value;
+
+import java.util.Map;
 
 import static com.automationanywhere.commandsdk.model.AttributeType.*;
 
@@ -31,11 +34,15 @@ public class BetterComments {
             @Pkg(label = "[[BetterComments.firstString.label]]")
             String firstString,
 
-            @Idx(index = "2", type = CODE)
+            @Idx(index = "2", type = HTML)
+            @Pkg(label = "[[BetterComments.HTML.label]]")
+            Map<String, Value> aboutDescription,
+
+            @Idx(index = "3", type = CODE)
             @Pkg(label = "[[BetterComments.codeBlockString.label]]")
             String codeBlockString,
 
-            @Idx(index = "3", type = IMAGE)
+            @Idx(index = "4", type = IMAGE)
             @Pkg(label = "[[BetterComments.imageString.label]]")
             Image imageString
 
