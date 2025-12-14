@@ -5,7 +5,7 @@
   "group": "com.automationanywhere",
   "artifactName": "betterComments",
   "packageVersion": "0.2.1",
-  "codeVersion": "0.2.1",
+  "codeVersion": "",
   "author": "jamir-boop",
-  "commands": []
+  "commands": ["betterComments"]
 }
