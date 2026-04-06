@@ -28,6 +28,10 @@ import static com.automationanywhere.commandsdk.model.AttributeType.*;
 )
 public class BetterComments {
 
+    private void executeAction() {
+        //
+    }
+
     @Execute
     public void action(
             @Idx(index = "1", type = TEXT)
@@ -42,11 +46,65 @@ public class BetterComments {
             @Pkg(label = "[[BetterComments.codeBlockString.label]]")
             String codeBlockString,
 
-            @Idx(index = "4", type = IMAGE)
+            @Idx(index = "4", type = CHECKBOX)
+            @Pkg(label = "Capture image")
+            Boolean imageCheckbox,
+
+            @Idx(index = "4.1", type = IMAGE)
             @Pkg(label = "[[BetterComments.imageString.label]]")
-            Image imageString
+            Image imageString,
+
+            @Idx(index = "4.2", type = TEXT)
+            @Pkg(label = "Detail about captured image")
+            String detailAboutImage,
+
+            @Idx(index = "5", type = CHECKBOX)
+            @Pkg(label = "Capture image")
+            Boolean imageCheckbox2,
+
+            @Idx(index = "5.1", type = IMAGE)
+            @Pkg(label = "[[BetterComments.imageString.label]]")
+            Image imageString2,
+
+            @Idx(index = "5.2", type = TEXT)
+            @Pkg(label = "Detail about captured image")
+             String detailAboutImage2,
+
+            @Idx(index = "6", type = CHECKBOX)
+            @Pkg(label = "Capture image")
+            Boolean imageCheckbox3,
+
+            @Idx(index = "6.1", type = IMAGE)
+            @Pkg(label = "[[BetterComments.imageString.label]]")
+            Image imageString3,
+
+            @Idx(index = "6.2", type = TEXT)
+            @Pkg(label = "Detail about captured image")
+             String detailAboutImage3
 
     ) {
-        //
+        executeAction();
+    }
+
+    public void action(
+            String firstString,
+            Map<String, Value> aboutDescription,
+            String codeBlockString,
+            Image imageString
+    ) {
+        action(
+                firstString,
+                aboutDescription,
+                codeBlockString,
+                imageString != null,
+                imageString,
+                null,
+                false,
+                null,
+                null,
+                false,
+                null,
+                null
+        );
     }
 }

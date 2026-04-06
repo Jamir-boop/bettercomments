@@ -4,11 +4,10 @@
     "description": "[[description]]",
     "group": "com.automationanywhere",
     "artifactName": "BetterComments",
-    "packageVersion": "2.11.0-20250621-202002",
-    "codeVersion": "2.11.0-20250621-202002",
-    "author": "",
+    "packageVersion": "0.1.4",
+    "codeVersion": "0.1.4",
+    "author": "jamir-boop",
     "commands": [
-        "betterComments",
         {
             "name": "BetterComments",
             "label": "[[BetterComments.label]]",
@@ -45,9 +44,55 @@
                     "type": "CODE"
                 },
                 {
-                    "name": "imageString",
-                    "label": "[[BetterComments.imageString.label]]",
-                    "type": "IMAGE"
+                    "name": "imageCheckbox",
+                    "label": "Capture image",
+                    "type": "CHECKBOX",
+                    "attributes": [
+                        {
+                            "name": "imageString",
+                            "label": "[[BetterComments.imageString.label]]",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "name": "detailAboutImage",
+                            "label": "Detail about captured image",
+                            "type": "TEXT"
+                        }
+                    ]
+                },
+                {
+                    "name": "imageCheckbox2",
+                    "label": "Capture image",
+                    "type": "CHECKBOX",
+                    "attributes": [
+                        {
+                            "name": "imageString2",
+                            "label": "[[BetterComments.imageString.label]]",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "name": "detailAboutImage2",
+                            "label": "Detail about captured image",
+                            "type": "TEXT"
+                        }
+                    ]
+                },
+                {
+                    "name": "imageCheckbox3",
+                    "label": "Capture image",
+                    "type": "CHECKBOX",
+                    "attributes": [
+                        {
+                            "name": "imageString3",
+                            "label": "[[BetterComments.imageString.label]]",
+                            "type": "IMAGE"
+                        },
+                        {
+                            "name": "detailAboutImage3",
+                            "label": "Detail about captured image",
+                            "type": "TEXT"
+                        }
+                    ]
                 }
             ]
         }

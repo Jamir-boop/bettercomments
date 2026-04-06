@@ -1,14 +1,8 @@
 ![image-20250501151232078](README.assets/image-20250501151232078.png)
 
-## User Guide
+## Guide
 
 BetterComments is a custom Automation Anywhere package designed to enhance bot documentation and maintainability. It allows you to add multi-line comments and embed images directly in your bot logic.
-
-### Features
-
-- **Multi-line comments:** Create detailed explanations within your bots for better understanding.
-- **Image support:** Attach reference images (e.g., diagrams, flows) to make complex logic clearer.
-- **No-op behavior:** Commands are non-executing—used purely for annotation purposes.
 
 ### Installation
 
@@ -16,12 +10,11 @@ BetterComments is a custom Automation Anywhere package designed to enhance bot d
 2. Deploy it to your bots as needed.
 3. If build issues occur, refer to the patch instructions below.
 
-### How to Use
-
-- **Add a Comment:** Use the `Add Comment` command and input your descriptive text.
-- **Insert an Image:** Use the `Add Image Comment` command and provide the path or base64 string of the image.
-
 > 📌 *Tip:* Use comments generously in complex loops or decision structures for better maintainability.
+
+### Build
+
+`gradle clean build :shadowJar`
 
 ---
 

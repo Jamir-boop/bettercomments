@@ -22,10 +22,11 @@ configure(allprojects){
 
 	ext {
 		groupName = 'com.automationanywhere'
+		authorName = 'jamir-boop'
 		testNgVersion = '6.14.3'
 		loggerVersion = '2.20.0'
 		jnaVersion = '5.3.1'
-		version '2.11.0'
+		version '0.1.4'
 	}
 	group "$groupName"
 
@@ -44,8 +45,8 @@ configure(allprojects){
 	packageJson{
 		artifactName = project.name
 		group = "$groupName"
-		author = ""
-		generatePackageWithDateTime = true
+		author = "$authorName"
+		generatePackageWithDateTime = false
 	}
 
 	jar.dependsOn commandCodeGen
