@@ -17,7 +17,7 @@ import static com.automationanywhere.commandsdk.model.AttributeType.*;
 @CommandPkg(
         name = "BetterComments",
         label = "[[BetterComments.label]]",
-        node_label = "{{firstString}}",
+        node_label = "{{firstString}} {{detailAboutImage}} {{detailAboutImage2}} {{detailAboutImage3}}",
         description = "[[BetterComments.description]]",
         icon = "comment.svg",
         return_type = DataType.NONE,

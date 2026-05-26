@@ -4,15 +4,15 @@
     "description": "[[description]]",
     "group": "com.automationanywhere",
     "artifactName": "BetterComments",
-    "packageVersion": "0.1.4",
-    "codeVersion": "0.1.4",
+    "packageVersion": "0.1.10",
+    "codeVersion": "0.1.10",
     "author": "jamir-boop",
     "commands": [
         {
             "name": "BetterComments",
             "label": "[[BetterComments.label]]",
             "description": "[[BetterComments.description]]",
-            "nodeLabel": "{{firstString}}",
+            "nodeLabel": "{{firstString}} {{detailAboutImage}} {{detailAboutImage2}} {{detailAboutImage3}}",
             "documentationUrl": "https://github.com/Jamir-boop/bettercomments",
             "allowedAgentTargets": [
                 "WINDOWS"
