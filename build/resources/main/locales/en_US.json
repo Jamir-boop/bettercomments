@@ -1,7 +1,7 @@
 {
-	"label": "BetterComment",
+	"label": "//",
 	"description": "Comment with documentation a code block and images.",
-	"BetterComments.label": "BetterComment",
+	"BetterComments.label": "//",
 	"BetterComments.description": "Comment with documentation a code block and images.",
 	"BetterComments.node_label": "Comment",
 	"BetterComments.firstString.label": "Comment title",

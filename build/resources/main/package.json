@@ -4,8 +4,8 @@
     "description": "[[description]]",
     "group": "com.automationanywhere",
     "artifactName": "BetterComments",
-    "packageVersion": "0.1.10",
-    "codeVersion": "0.1.10",
+    "packageVersion": "3.0.1",
+    "codeVersion": "3.0.1",
     "author": "jamir-boop",
     "commands": [
         {
