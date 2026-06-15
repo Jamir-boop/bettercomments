@@ -1,4 +1,4 @@
-![image-20250501151232078](README.assets/image-20250501151232078.png)
+https://github.com/user-attachments/assets/aa186c1d-05ba-4354-a70e-187018bbbf3b
 
 ## Guide
 
